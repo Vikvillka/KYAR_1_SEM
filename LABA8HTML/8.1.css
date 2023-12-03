@@ -1,0 +1,45 @@
+body{
+    background-image: url(IMG/fon1.png);
+    background-attachment: fixed;
+}
+aside {
+    width: 30%;
+    float: right;
+    box-shadow: inset 10px 0 5px -5px #7168d4;
+    font-style: italic;
+    color: #4b42b0;
+    font-size: 30px;
+}
+.p1 {
+    margin: 20px;
+}
+.d2 p{
+    font-size: 20px;
+}
+.d2{
+    margin: 20px;
+    width: 950px;
+}
+ul{
+    list-style-type: none;
+}
+ul a{
+    display: block;
+    margin-top: 20px;
+    font-size: 25px;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: #8B0000;
+}
+a:hover{
+    color: green;
+}
+a:active{
+    color: rgb(184, 134, 11);
+}
+a{
+    text-decoration: none;
+}

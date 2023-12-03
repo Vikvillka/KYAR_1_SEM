@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="forXML.css"?>
+<table>
+<head>
+    <hobl>Область</hobl>
+    <hpopulation>Население</hpopulation>
+</head>
+<string>
+    <obl>Минская</obl>
+    <population>2 018 281</population>
+</string>
+<string>
+    <obl>Гродненская</obl>
+    <population>1 026 816</population>
+</string>
+<string>
+    <obl>Гомельская</obl>
+    <population>1 388 512</population>
+</string>
+<string>
+    <obl>Могилевская</obl>
+    <population>1 024 751</population>
+</string>
+<string>
+    <obl>Брестская</obl>
+    <population>1 348 115</population>
+</string>
+<string>
+    <obl>Витебская</obl>
+    <population>1 135 731</population>
+</string>
+</table>

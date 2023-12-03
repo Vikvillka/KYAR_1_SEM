@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laba 14</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         svg .home_1 {
+    fill: rgb(255, 0, 43);
+  }
+  
+  svg .home_2 {
+    fill: rgb(0, 98, 255);
+  }
+  
+  svg .home_3 {
+    fill: #ffbb01;
+  }
+  
+  svg .home_4 {
+    fill: blueviolet;
+  }
+  
+  svg .home_5 {
+    fill: rgb(27, 220, 20);
+  }
+    </style>
+</head>
+<body>
+    <svg 
+    xmlns="http://www.w3.org/2000/svg"
+    width="600" height="600">
+    <defs>
+    <path id="home" d="M100 59.375l-18.75-18.75v-28.125h-12.5v15.625l-18.75-18.75-50 50v3.125h12.5v31.25h31.25v-18.75h12.5v18.75h31.25v-31.25h12.5z"/>
+    </defs>
+    <use xlink:href="#home" class="home_1" x="40" y="10"  transform="rotate(50,100,40)"/>
+        <use xlink:href="#home" class="home_2" x="80" y="10"  transform="translate(150,100)"/>
+        <use xlink:href="#home" class="home_3" x="200" y="10"  transform="skewX(50)"/>
+        <use xlink:href="#home" class="home_4" x="450" y="10"  transform="skewY(20)"/>
+        <use xlink:href="#home" class="home_5" x="900" y="10"  transform="scale(0.5)"/>
+</svg>
+</body>
+</html>

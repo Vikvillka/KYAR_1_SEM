@@ -1,0 +1,244 @@
+body{
+    background-image: url(fon1.png);
+    background-attachment: fixed;
+}
+img{
+    width:300px;
+    margin: 50px 30px;
+}
+/*задание 1*/
+.i1:hover{
+    transform: scale(0.5);}
+.i2:hover{
+   transform: rotate(45deg);}
+.i3:hover{
+    transform: translate(50px);}
+.i4:hover{
+    transform: skew(-20deg);}
+/*задание 2*/
+.i5{
+    transform: perspective(500px) rotateX(30deg);}
+.i6{
+    transform: perspective(500px) rotateY(45deg);}
+.i7{
+    transform: perspective(500px) rotateX(30deg);}
+.i8{
+    transform: perspective(500px) rotateY(-45deg);}
+/*задание 3*/
+input[type="button1"]:hover{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+input[type="button2"]:hover{
+    border: solid 5px rgb(245, 2, 2);
+    outline: solid 5px rgb(243, 228, 16);
+}
+input[type="button3"]:hover{
+    border-bottom: 10px solid rgb(14, 125, 4) ;
+    border-top: 10px solid rgb(14, 125, 4) ;
+    border-width: 10px 0 10px 0;
+}
+input[type="button4"]:hover{
+    border-right: 10px solid rgb(9, 28, 173) ;
+    border-left: 10px solid rgb(9, 28, 173) ;
+    border-width:  0 10px 0 10px;
+}
+input[type="button5"]:hover{
+    background: radial-gradient( yellow ,rgb(234, 6, 222), rgb(12, 206, 255));
+    font-weight: bold ;
+}
+/*задание 4*/
+.ii1, .ii2, .ii3, .ii4{
+    animation: 5s infinite;
+    animation-name: img;
+    width: 200px;
+}
+.d1{
+    margin-top:30px;
+    margin-left:200px;
+}
+@keyframes img {
+    0%{
+        transform: perspective(800px) rotateY(45deg);
+        margin-left:-200px;
+    }
+    50%{
+       margin-left:-140px;
+    }
+    100%{
+        margin-right: 0px;
+    }
+}
+.ii2{
+    animation: 5s infinite;
+    animation-name: img2;
+    width: 200px;
+}
+@keyframes img2 {
+        0%{
+            transform: perspective(800px) rotateY(45deg);
+            margin-left:-200px;
+        }
+        50%{
+           margin-left:-140px;
+        }
+        100%{
+            margin-right: 0px;
+            filter: blur(10px);
+        }
+}
+.ii3{
+    animation: 5s infinite;
+    animation-name: img3;
+    width: 200px;
+}
+@keyframes img3 {
+        0%{
+            transform: perspective(800px) rotateY(45deg);
+            margin-left:-200px;
+        }
+        50%{
+           margin-left:-140px;
+        }
+        100%{
+            margin-right: 0px;
+            filter: grayscale(1);
+        }
+}
+.ii4{
+    animation: 5s infinite;
+    animation-name: img4;
+    width: 200px;
+}
+@keyframes img4 {
+        0%{
+            transform: perspective(800px) rotateY(45deg);
+            margin-left:-200px;
+        }
+        50%{
+           margin-left:-140px;
+        }
+        100%{
+            margin-right: 0px;
+            filter: invert(1);
+        }
+}
+/*задание 5*/
+.d2{width: 300px;
+    height: 300px;
+    border: 5px solid rgb(58, 180, 193);
+    background-position: center; 
+    margin-left: 100px;
+    position: relative;
+}
+div.d2{ 
+    animation: around 5s linear infinite; }
+    @keyframes around {
+    0% {background-image: url(kot3.jfif);
+    background-size: 300px;}
+    25% {background-image: url(kot4.jfif);
+    background-size: 300px;}
+    50% {background-image: url(kot6.jfif);
+    background-size: 300px;}
+    75% {background-image: url(kot7.jfif); 
+    background-size: 300px;}
+    100% { background-image: url(kot8.jfif);
+    background-size: 300px;}
+}
+/*задание6*/
+.img1, .img2, .img3, .img4, .img5{
+    width: 200px;
+}
+/*.dd1, .dd2, .dd3, .dd4, .dd5{
+    float: left;
+    margin-right: 400px;
+    margin-top: 340px;
+    margin-bottom: -200px;
+}*/
+.img2{
+    border: 2 solid royalblue;
+}
+.dd3{
+    overflow: hidden;
+}
+.img1{
+    position: relative;
+    animation: dd1 4s linear infinite; } 
+    @keyframes dd1 {
+    0% { left: 0; top: 0; }
+    50% { left: 200px; top: 0; }
+    100% { left: 0; top: 0; }
+}
+.img2{
+    position: relative;
+    animation: dd2 4s linear infinite; } 
+    @keyframes dd2 {
+    0% { left: 0; top: 0; }
+    50% { left: 400px; top: 0;
+    border-radius: 100%; }
+    100% { left: 0; top: 0; }
+}
+.img3{
+    position: relative;
+    animation: dd3 4s linear infinite; }
+    @keyframes dd3 {
+    from { margin-right: 100%;}
+    to { margin-left: 100%; }
+}
+.img4{
+    position: relative;
+    animation: dd4 2s linear infinite; }
+    @keyframes dd4 {
+    0% { left: 0; top: 0; }
+    50% { left: 0; top: 50px; }
+    100% { left: 0; top: 0; }
+}
+.img5{
+    margin-bottom:220px ;
+    position: relative;
+    animation: dd5 4s linear infinite; }
+    @keyframes dd5 {
+    0% { left: 0 ; top: 0 ; }
+    25% { left: 200px; top: 0; }
+    50% { left: 200px; top: 200px; }
+    75% { left: 0; top: 200px; }
+    100% { left: 0; top: 0; }
+}
+/*задание7*/
+.texxt{
+    text-align: left;
+    margin-left: 450px;
+    margin-top: -300px;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation: texxt 5s linear infinite; }
+    @keyframes texxt {
+    0% { color: rgb(255, 0, 0); }
+    25% { color: rgb(255, 208, 0); }
+    50% { color: rgb(0, 255, 64);}
+    75% { color: rgb(0, 76, 255); }
+    100% { color: rgb(212, 0, 255);}
+}
+.bb{
+    width: 100%;
+    float: left;
+}
+/*задание8*/
+h1{ 
+    position: relative;
+    animation: around4 4s linear infinite; }
+    @keyframes around4 {
+    0% { opacity: 0%;}
+    50% { opacity: 80%; }
+    100% { opacity: 0%; }
+}
+.hh{
+    margin-bottom: -40px;
+}
+input{
+    margin-bottom: 60px;
+}
+
+
+

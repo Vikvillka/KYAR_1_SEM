@@ -1,0 +1,40 @@
+.grid1 , .grid2 {
+    display: grid;
+    grid-auto-rows: minmax(600px, auto) ;
+    margin: 3%;
+}
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr;
+    grid-column-gap: 2%;
+}
+.grid1 > div{
+    background-color: rgb(221, 179, 112);
+}
+.grid2{
+    display: grid;
+    grid-template-columns: 5fr 5fr 1fr;
+    grid-column-gap: 2%;
+}
+.grid2 > div:not(.dd){
+    background-color: rgb(221, 179, 112);
+}
+.dd{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5%;
+}
+.dd > div{
+    background-color: rgb(221, 179, 112);
+}
+.zaglav{
+    writing-mode: vertical-lr; 
+    text-orientation: upright;
+    text-align: center; 
+    padding: 30%;
+    font-size: 40px;
+}
+.text{
+    padding: 5%;
+    font-size: 23px;
+}

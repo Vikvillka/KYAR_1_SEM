@@ -1,0 +1,61 @@
+body{
+ background-color: rgb(255, 255, 255);
+}
+.grid {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(100px,auto) minmax(70px, auto) minmax(450px, auto);
+    grid-template-areas: 
+    "x1 x2 x2 x2"
+    "x3 x4 x5 x6"
+    "x7 x8 x9 x10";
+    grid-gap: 15px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.grid > div{
+    background-color: rgb(255, 233, 198);
+    border: 3px solid rgb(86, 60, 7);
+    text-align: center;
+}
+.grid > div[style="grid-area: x1;"] {
+    background-color: rgb(255, 255, 255);
+    width: 100px;
+    margin-left: 120px;
+    border: 0;
+}
+img {
+    height: 100px;
+    width: 100px;
+}
+.nav{
+    margin: 10px 10px 10px 100px;
+}
+.nav li { 
+    display: inline; 
+}
+.nav li { float: left; 
+}
+.nav a {
+    display: inline-block; 
+    width: 130px;
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(116, 76, 39);
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+}
+.nav a:hover{
+   color: rgb(42, 35, 24);
+}
+.d1{
+    font-size: 25px;
+    padding-top: 8px;
+    font-style: italic;
+}
+.d2{
+    font-size: 19px;
+    padding: 10px;
+}

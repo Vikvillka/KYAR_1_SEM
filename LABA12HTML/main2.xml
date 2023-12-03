@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="forXML.css"?>
+<!DOCTYPE table [
+<!ELEMENT table (head, string, hobl, hpopulation, obl, population)>
+<!ELEMENT head (#PCDATA)>
+<!ELEMENT string (#PCDATA)>
+<!ELEMENT hobl (#PCDATA)>
+<!ELEMENT hpopulation (#PCDATA)>
+<!ELEMENT obl (#PCDATA)>
+<!ELEMENT population (#PCDATA)>
+<!ENTITY oblast "Область">
+<!ENTITY population "Население">
+]>
+<table>
+    <head>
+        <hobl>&oblast;</hobl>
+        <hpopulation>&population;</hpopulation>
+    </head>
+    <string>
+        <obl>Минская</obl>
+        <population>2 018 281</population>
+    </string>
+    <string>
+        <obl>Гродненская</obl>
+        <population>1 026 816</population>
+    </string>
+    <string>
+        <obl>Гомельская</obl>
+        <population>1 388 512</population>
+    </string>
+    <string>
+        <obl>Могилевская</obl>
+        <population>1 024 751</population>
+    </string>
+    <string>
+        <obl>Брестская</obl>
+        <population>1 348 115</population>
+    </string>
+    <string>
+        <obl>Витебская</obl>
+        <population>1 135 731</population>
+    </string>
+</table>

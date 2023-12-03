@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta  content="text/html; charset=utf-8">
+<h1>Form</h1>
+<button onclick='blablabla()'>Показать форму</button>
+<div id='blablabla'>
+  <form role="form" action="/requestFine" autocomplete="off" method="POST">
+    <label>Ім'я:</label>
+    <input type="text" name="nameReq">
+    <label>Прізвище:</label>
+    <input type="text" name="lastNameReq">
+    <label>Телефон:</label>
+    <input type="text" name="telReq">
+    <label>Опис:</label>
+    <input type="text" name="textReq">
+    <button type="submit" class="btn btn-success">Отправить</button>
+  </form>
+</div>
+<script>
+    function blablabla() {
+  document.getElementById('blablabla').style.display = 'block';
+}
+</script>
+</body>
+</html>

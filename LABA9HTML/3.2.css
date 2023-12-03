@@ -1,0 +1,59 @@
+.grid1 {
+    display:grid;
+    grid-template-columns:2fr 6fr 3fr;
+    grid-template-rows: minmax(70px, 70px) minmax(570px, auto) minmax(70px, auto);
+    grid-template-areas: 
+    "y1 y1 y1"
+    "y2 y3 y4"
+    "y5 y5 y5 ";
+    grid-gap: 10px;
+}
+.grid1 > div{
+    background-color: rgb(217, 192, 241);
+    border: 3px solid rgb(69, 40, 78);
+}
+ul{
+    list-style-type: none;
+    padding-top: 30px;
+    font-size: 18px;
+}
+ul>b{
+    font-size: 23px;
+    text-align: center;
+}
+ul a{
+    display: block;
+    padding-top: 50px;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+a:link{
+    color: rgb(38, 74, 184);
+}
+a:hover{
+    color: rgb(19, 51, 83);
+}
+.d1{
+    text-align: center;
+}
+.d2{
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.d3, .d4{
+    font-size: 20px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+h2{
+    text-align: center;
+    font-size: 27px;
+    color: rgb(36, 62, 57);
+}
+.d5{
+    font-size: 18px;
+    padding: 15px;
+}

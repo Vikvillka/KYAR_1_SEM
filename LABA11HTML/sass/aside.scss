@@ -1,0 +1,33 @@
+$red:rgb(122, 31, 31);
+$border: 4px solid rgb(122, 31, 31);
+aside{
+    background-color: rgb(34, 40, 37);
+    flex: 1 1 300px;
+    h2{
+        color:  rgb(220, 140, 65);
+        width: 100%;
+    }
+    article{
+        background-color: rgb(33, 26, 19);
+        border: $border;
+        padding: 0;
+        figure{
+            margin: 5px;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 25% 72%;
+            grid-gap: 5px;
+            img{
+                width: 100%;
+                height: 170px;
+            }
+            figcaption{
+                color: rgb(184, 148, 104);
+            }
+        }     
+    }
+    margin-top: 20px;
+    @media(min-width: 816px){
+        margin-left: 20px;
+    }
+}

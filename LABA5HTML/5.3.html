@@ -1,0 +1,106 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta charset="UTF-8"> 
+<title>Форма</title> 
+<style>
+form{
+    background-color: indigo;
+    width: 450px;
+    padding-left: 30px;
+    border-radius: 10px;
+    
+  }
+div{
+    padding-bottom: 10px;
+}
+label{
+    display: inline-block;
+    width: 210px;
+    height: 15px;
+    margin-right: 10px;
+    padding-bottom: 12px;
+}
+body{
+    font-size: 1.2em;
+    color: white;
+}
+input[type="text"], input[type="email"]{
+    background-color: rgba(255,255,255,.5);
+    color: rgba(255,255,255,1);
+    box-shadow: inset 0 0 10px rgba(255,255,255, .75);
+    height: 25px;
+    width: 200px;
+    border-radius: 5px;
+}   
+input[type="button"] {
+    background-color: navy;
+    box-shadow: 0 0 4px white;
+    color: white;
+    height: 25px;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus
+{
+    background-color: black;
+    color:rgb(242, 240, 243);
+}
+h3{
+  padding-top: 30px;
+}
+
+</style>
+</head>
+<body>
+<form action="" method="post" >
+    <h3>Регистрация постоянного клиента</h3>
+     <div>
+         <label>Фамилия:</label>
+         <input type="text" name="login">
+     </div>
+     <div>
+         <label>Имя:</label>
+         <input type="text" name="login">
+     </div>
+     <div>
+         <label>Отчество:</label>
+         <input type="text" name="login">
+     </div>
+     <div>
+        <label>Ваш возраст:</label>
+        <input type="text" name="login">
+      </div>
+      <div>
+        <label>Пол</label>
+        <input type="checkbox" name="login" />женский
+        <input type="checkbox" name="login" />мужской
+      </div>
+      <div>
+        <label>Страна проживания:</label>
+        <input type="text" name="login">
+      </div>
+      <div>
+        <label>Email:</label>
+        <input type="email" name="login" >
+      </div>
+      <div>
+        <label>Откуда вы узнали о нас?:</label>
+        <select name="user">
+            <option value="1">Bыберите вариант</option>
+            <option value="2">от друзей</option>
+            <option value="3">в интернете</option>
+            <option value="3">другое</option>
+        </select>
+      </div>
+      <div>
+        <label>Дата заполнения:</label>
+        <input type="date" name="login" />
+      </div>
+      <div>
+        <label></label>
+        <input type="button" value="Регистрация">
+        <input type="button" value="Назад">
+      </div>
+</body>
+</html>

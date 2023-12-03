@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset ="UFT-8" >
+<link href="style.less" rel="stylesheet/less" type="text/css" />
+<link rel="stylesheet" href="lab15.css">
+<title>15</title>
+</head>
+<body>
+        <img onmouseenter="showText()" onmouseleave="hideText()" src="kot3.jfif">
+        <img onclick="this.className = (this.className == 'img' ? 'img__active' : 'img')" class="img" src="kot5.jfif">
+        <img src="kot6.jfif">
+        <img src="kot7.jfif" id="sir1" onmouseover="change('kot7.jfif')" onmouseout="change('kot8.jfif')">
+        <p id="imgText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque facere illo amet inventore commodi laborum reiciendis exercitationem nobis? Quae ea asperiores dolores sequi, et tenetur. Aspernatur sequi voluptatibus veritatis corporis.</p>
+    </div>
+    <script type="text/javascript">
+        function change(src){
+            document.getElementById('sir1').src = src;
+        }
+let underImgP = document.getElementById('imgText');
+
+function showText(){
+    underImgP.style.opacity = "1";
+}
+
+function hideText(){
+    underImgP.style.opacity = "0";
+}
+</script>
+
+    <div class="form">
+        <H1>Заполните анкету</H1>
+        <form>
+            <lable><a>Фамилия:</a><input type="text" class="text" id="name"></lable>
+            <lable><a>Имя:</a><input type="text" class="text" id="fam"></lable>
+            <lable><a>Отчество:</a><input type="text" class="text" id="otch"></lable>
+            <label>
+                <input type="radio" id="radio" value="OK"> Доставить на точку
+            </label>
+            <BR>
+            <label>
+                <input type="radio" id="radio" value="1"> Доставить на дом
+            </label>
+            <div class="box">
+                <label><input type="checkbox" id="checkbox" value="оплата наличными" >оплата наличными</label>
+                <label><input type="checkbox" id="checkbox" value="checkbox 2" >оплата картой</label>
+                <label><input type="checkbox" id="checkbox" value="checkbox 3" >оплата через ЕРИП</label>
+                </div>
+                <p>Добавьте комментарий</p>
+                <lable><input type="text" id="text"></lable>
+                <div class="knopki">
+                <label><input type="button" id="butt"  value="подтвердить"></label>
+                <label><input type="reset" value="сброс"></label>
+                </div>
+            </form>
+    <script>
+       document.getElementById("butt").addEventListener(
+                    'click',
+                    function(){
+                    var val = document.getElementById('name').value;
+                    var vall = document.getElementById('fam').value;
+                    var valll = document.getElementById('otch').value;
+                    document.getElementById('footer').innerHTML="Фамилия: "+val+" Имя: "+vall+" Отчество: "+valll;
+                })
+    </script>
+    </div>
+    <footer id="footer"></footer>
+    </body>
+    </html>

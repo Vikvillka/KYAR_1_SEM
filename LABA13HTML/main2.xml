@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="style.xsl"?>
+<catalog>
+    <student>
+        <name>Захарова Каролина</name>
+        <mark>3</mark>
+    </student>
+    <student>
+        <name>Мех Александра</name>
+        <mark>2</mark>
+    </student>
+    <student>
+        <name>Гончаров Максим</name>
+        <mark>7</mark>
+    </student>
+    <student>
+        <name>Лианович Арина</name>
+        <mark>4</mark>
+    </student>
+    <student>
+        <name>Линчевский Николай</name>
+        <mark>5</mark>
+    </student>
+    <student>
+        <name>Бабков Евгений</name>
+        <mark>3</mark>
+    </student>
+    <student>
+        <name>Гайкова Эльвира</name>
+        <mark>9</mark>
+    </student>
+    <student>
+        <name>Борисевич Артем</name>
+        <mark>10</mark>
+    </student>
+</catalog>

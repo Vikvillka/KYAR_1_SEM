@@ -1,0 +1,70 @@
+body{
+    background-image: url(fon1.png);
+    background-repeat:round;
+    color: rgb(16, 29, 111);
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+h1{
+  margin-left: 100px;
+}
+img{
+    width: 25em;
+    height: 15em;
+    margin-left: 6px;
+    margin-right: 6px;
+    border: 3px solid black;
+}
+#worktext{
+    color: black;
+    font-size: 2em;
+}
+img {
+    width: 200px;
+    border: none;
+  }
+form{
+  background-color: rgb(194, 199, 252);
+  width: 500px;
+  margin-left: 100px;
+}
+  .img__active {
+    width: 200px;
+    border: 10px solid #850000;
+  }
+  #imgText{
+    display: block;
+    width: 800px;
+    height: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+  input[type="checkbox"]{
+    display: inline;
+  }
+  input[type="button"]{
+    display: inline;
+  }
+  input[type="reset"]{
+    display: inline;
+  }
+  .knopki{
+    margin-top: 20px;
+  }
+  .box{
+    display: block;
+  }
+  #name,#fam,#otch{
+    display: block;
+    margin: 7px;
+  }
+  #name:focus{
+    color: rgb(2, 2, 2);
+  }
+  #footer{
+    color: rgb(16, 29, 111);
+    font-size: 30px;
+    
+  }

@@ -1,0 +1,86 @@
+body {
+    background:#f2d6b5;
+}
+table {
+    width: 80%; 
+     
+    border: 2px ridge rgb(155, 155, 155);
+    text-align: center;
+}
+h1{
+    
+    text-shadow: 1px 1px 2px rgb(124, 26, 19);
+    text-align:center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 45px ;
+    margin-bottom: 0;
+}
+h2{
+    
+    text-shadow: 1px 1px 2px rgb(124, 26, 19);
+    text-align:left;
+    margin-top:0.2rem ;
+    margin-bottom:1.2em;
+    text-indent:25px;
+}
+.b{
+    margin-bottom: 0;
+}
+p{
+    text-indent:25px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 20px ;
+    text-align:justify;
+    line-height: 200%;
+}
+ol{
+    margin-top: 0;
+}
+li {
+    list-style-type: upper-roman;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+/*задания для 6 лабы*/
+.img1{
+    width:100px;
+    height:100px;
+    border-radius: 20px;           
+    position:fixed;
+    right:1%;
+}
+ul li{
+    list-style:none;
+    line-height:30px;
+}
+ul li:before {
+    content:"";
+    background-image:url(img/1.png);
+    float:left;
+    width:30px;
+    height:30px;
+    margin-right:10px;
+}
+p{  
+    font-size: 20px;
+    margin-top: 0; 
+    margin-bottom: 0; 
+}
+p:first-line{
+    margin-left: 0 ;
+}
+img{
+margin: 10px 10px;
+}
+img.img2{
+    width:350px;
+    height:400px;           
+    float: left;
+} 
+img.img3{
+    width:350px;
+    height:400px;           
+    float: right;
+} 

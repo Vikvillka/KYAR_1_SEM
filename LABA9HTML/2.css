@@ -1,0 +1,84 @@
+.grid {
+    display:grid;
+    grid-template-columns: repeat(5, 170px);
+    grid-template-rows: repeat(4, minmax(170px,170px));
+    grid-template-areas: 
+    "x1 x2 x3 x4 x5"
+    "x6 x7 x8 x9 x9"
+    "x10 x10 x11 x9 x9 "
+    "x10 x10 x12 x13 x14";
+    grid-gap: 15px;
+    margin: 20px;
+    margin-left: 270px;
+}
+.grid > div{
+    background-color: rgb(221, 179, 112);
+    border: 3px solid rgb(138, 91, 26);
+    text-align: center;
+}
+.d1{
+    background-image: url(img/kotauty.jfif);
+    background-size: 100%;
+}
+/*img{
+    width: 140px;
+}
+figure{
+    margin: 0;
+}*/
+.d2{
+    background-image: url(img/kotvkepke.jfif);
+    background-size: 100%;
+}
+.d3{
+    background-image: url(img/zauchik.jfif);
+    background-size: 100%;
+}
+.d4{
+    background-image: url(img/volshen.jfif);
+    background-size: 100%;
+}
+.d5{
+    background-image: url(img/tylen.jfif);
+    background-size: 100%;
+}
+.d6{
+    background-image: url(img/kotipyzir.jfif);
+    background-size: 100%;
+}
+.d7{
+    background-image: url(img/kotvvode.jfif);
+    background-size: 100%;
+}
+.d8{
+    background-image: url(img/kotiarbyz.jfif);
+    background-size: 100%;
+}
+.d11{
+    background-image: url(img/1.jfif);
+    background-size: 100%;
+}
+.d12{
+    background-image: url(img/telefon.jfif);
+    background-size: 100%;
+}
+.d13{
+    background-image: url(img/ytka.jfif);
+    background-size: 100%;
+}
+.d14{
+    background-image: url(img/panda.jfif);
+    background-size: 100%;
+}
+.d9{
+    background-image: url(img/giff.gif);
+    background-size: 100%;
+}
+.d10{
+    background-image: url(img/kataa.jpg);
+    background-size: 100%;
+    padding-top: 130px;
+    text-align: left;
+    font-size: 22px;
+    color: rgb(86, 52, 22);
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="main.xsl"?>
+<catalog>
+<string>
+    <obl>Минская</obl>
+    <population>2018281</population>
+</string>
+<string>
+    <obl>Гродненская</obl>
+    <population>1026816</population>
+</string>
+<string>
+    <obl>Гомельская</obl>
+    <population>1388512</population>
+</string>
+<string>
+    <obl>Могилевская</obl>
+    <population>1024751</population>
+</string>
+<string>
+    <obl>Брестская</obl>
+    <population>1348115</population>
+</string>
+<string>
+    <obl>Витебская</obl>
+    <population>1135731</population>
+</string>
+</catalog>

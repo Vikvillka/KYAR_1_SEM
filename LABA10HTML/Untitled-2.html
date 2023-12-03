@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+       ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+  background:#819A32; /*добавляем фон всему меню*/
+  height: 50px; /*задаем высоту*/
+}
+a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#819A32; /*добавляем фон к пункту меню*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-right: 1px solid #677B27; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+
+}
+a:hover {
+  background:#D43737;/*добавляем эффект при наведении*/
+}
+li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+  position:relative; /*задаем позицию для позиционирования*/
+}
+
+ /*Стили для скрытого выпадающего меню*/
+ li > ul {
+        position:absolute;
+        top:25px;
+        display:none;   
+    }
+     
+@media only screen and (max-width: 560px){
+   
+   .h1 { position:absolute;
+        top:25px;
+        display:none; }
+    /*Делаем скрытую часть видимой*/
+    li:hover > ul {
+        display:block; 
+        width:250px;  /*Задаем ширину выпадающего меню*/      
+    }
+   li:hover > ul > li {
+        float:none; /*Убираем горизонтальное позиционирование*/
+    } 
+}
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+  left: 300px;
+
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: #616161;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+    </style>
+</head>
+<body>
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+    <ul>
+        <li><a href="#">Главная</a>
+            <ul>
+                <li><a href="#">Услуги</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul></li>
+        <li class="h1"><a href="#">Услуги</a></li>  
+        <li class="h1"><a href="#">Цены</a></li>
+        <li class="h1"><a href="#">Контакты</a></li>
+    </ul>
+</body>
+</html>

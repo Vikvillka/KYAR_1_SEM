@@ -1,0 +1,29 @@
+
+
+h1, h2, h3 {
+    font-family: 'Monotype Corsiva', serif;
+    color: #d301be;
+}   
+.u {
+  font-size: 18pt;
+    color:
+rgb(255, 34, 0);
+}
+.uu {
+  font-size: 20pt;
+    color:
+rgb(255, 238, 0);
+}
+.uuu {
+  font-size: 22pt;
+    color:
+rgb(13, 167, 18);
+}
+table {
+  background-color: rgb(181, 235, 252);
+  font-size: 15pt
+}
+tr {
+  color:#f645fc
+}
+

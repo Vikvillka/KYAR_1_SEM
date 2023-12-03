@@ -1,0 +1,34 @@
+body {
+  background: #fac7b7;
+}
+
+table {
+  width: 80%;
+  border: 1px solid;
+  border-collapse: collapse;
+}
+table th {
+  border: 1px solid;
+}
+table tr {
+  border: 1px solid;
+}
+table td {
+  border: 1px solid;
+}
+
+h3 {
+  text-align: center;
+}
+
+.col1 {
+  width: 20px;
+}
+
+p {
+  text-align: left;
+  font-size: 16pt;
+  color: rgb(13, 0, 255);
+  fallback: Arial;
+  font-family: "Times New Roman", Times, serif;
+}/*# sourceMappingURL=forlab1.2.css.map */
